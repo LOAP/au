@@ -74,6 +74,7 @@ module Rails3BootstrapDeviseCancan
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
+    config.assets.precompile += ['active_admin.css', 'active_admin/print.css', 'active_admin.js']
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
