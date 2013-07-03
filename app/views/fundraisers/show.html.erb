@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @fundraiser.title %>
+</p>
+
+<p>
+  <b>Goal:</b>
+  <%= @fundraiser.goal %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @fundraiser.summary %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @fundraiser.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_fundraiser_path(@fundraiser) %> |
+<%= link_to 'Back', fundraisers_path %>

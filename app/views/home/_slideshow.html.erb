@@ -1,0 +1,16 @@
+
+      <div class="imageshow" style="height: 400px;">
+        <img src= <%= asset_path "picture1.jpeg"%> >
+        <img src= <%= asset_path "picture2.jpeg"%> >
+      </div>
+
+<script>
+    $(function(){
+        $('.imageshow img:gt(0)').hide();
+        setInterval(function(){
+                    $('.imageshow :first-child').fadeOut()
+                            .next('img').fadeIn()
+                            .end().appendTo('.imageshow');},
+                5000);
+    });
+</script>
